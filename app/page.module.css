@@ -1,0 +1,33 @@
+.centers{
+    background-color: #3E363F;
+    height:423px;
+   
+}
+.banner {
+     width: 100vw; /* Set the width to 100% of the viewport width */
+    overflow: hidden;
+     text-align: center;
+    position: relative;
+   
+    border-bottom: 1px solid; /* Add a bottom border if needed */
+  }
+    .clients{
+        background-color: #1E1E1E;
+      
+        height: 339px;
+     
+    }
+    .btnExpore{
+        background-color: green;
+    }
+    .home{
+        overflow: hidden;
+    }
+    .bannerImage {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .banners{
+        width: 100;
+      }

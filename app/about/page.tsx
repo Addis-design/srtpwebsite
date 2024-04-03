@@ -1,14 +1,17 @@
-import { skyBg, homePark } from "../public/assets";
-import NavBar from "@/components/navbar/NavBar";
+import React from 'react'
+import styles from "./about.module.css"
+import { skyBg,homePark } from '@/public/assets'
 import Image from 'next/image'
-import styles from "./page.module.css"
-export default function Home() {
+export default function About() {
   return (
-  
- <div className="home">
-    <div className={`${styles.banner}overflow-hidden`}>
+    <div className={styles.about}>
+      <h1>About</h1>
+
+
+
+      <section className={`${styles.banner} overflow-hidden pt-0 pb-4 md:pb-14 mt-0 mb-0 text-tertiary relative z-[20] border-b`}>
       <div className="">
-        <div className={`${styles.banners}relative aspect-[1440/2800] overflow-hidden sm:aspect-[1440/1220] lg:aspect-[1440/920]`}>
+        <div className="relative aspect-[1440/2800] overflow-hidden sm:aspect-[1440/1220] lg:aspect-[1440/920]">
           <div className="absolute inset-0 w-full transform-none">
             <Image
               alt="sky"
@@ -26,26 +29,11 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute inset-0 flex items-center justify-center"> {/* Center button within its container */}
-            <button type="button" className="bg-green text-white border border-white hover:bg-white hover:text-green-500 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">Read More</button> {/* Button styling */}
+            <button type="button" className="bg-transparent text-white border border-white hover:bg-white hover:text-green-500 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">Read More</button> {/* Button styling */}
           </div>
         </div>
       </div>
+    </section>
     </div>
-
-    <div className={styles.centers}>
-      {/* ... your center content ... */}
-
-
-      
-    </div>
-    <div className={styles.clients}>
-      {/* ... your center content ... */}
-
-
-      
-    </div>
-    
-
-  </div>
-  );
+  )
 }
