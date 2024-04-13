@@ -1,33 +1,33 @@
 .nvaBar {
-     
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    background-color: white;
-    position: fixed; /* Add this rule */
-    top: 0; /* Position it at the top of the viewport */
-    left: 0; /* Position it at the left of the viewport */
-    z-index: 10; /* Ensure it stays on top of other content (optional) */
-  }
-  
-  .links {
-    padding: 10px;
-  }
-  
-  .active {
-    background-color: #00C853; /* Green color */
-    font-weight: bold; /* Optional: bold font for active link */
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 22px;
-  }
-  
-  .links {
-    align-items: center;
-    display: flex;
-    gap: 20px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: transparent;
+  position: fixed; /* Add this rule */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Position it at the left of the viewport */
+  z-index: 10; /* Ensure it stays on top of other content (optional) */
+}
+
+.links {
+  padding: 10px;
+}
+
+.active {
+  background-color: #00c853; /* Green color */
+  height: 30px;
+  margin-top: 0;
+  font-weight: bold; /* Optional: bold font for active link */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.links {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}

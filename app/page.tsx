@@ -1,14 +1,14 @@
 import { skyBg, homePark } from "../public/assets";
 import NavBar from "@/components/navbar/NavBar";
-import Image from 'next/image'
-import styles from "./page.module.css"
+import Image from "next/image";
+import styles from "./page.module.css";
 export default function Home() {
   return (
-  
- <div className="home">
-    <div className={`${styles.banner}overflow-hidden`}>
-      <div className="">
-        <div className={`${styles.banners}relative aspect-[1440/2800] overflow-hidden sm:aspect-[1440/1220] lg:aspect-[1440/920]`}>
+    <div className="home">
+      <div className={`${styles.banner}overflow-hidden`}>
+        <div
+          className={`${styles.banners}relative aspect-[1440/2800] overflow-hidden sm:aspect-[1440/1220] lg:aspect-[1440/920]`}
+        >
           <div className="absolute inset-0 w-full transform-none">
             <Image
               alt="sky"
@@ -25,27 +25,25 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="absolute inset-0 flex items-center justify-center"> {/* Center button within its container */}
-            <button type="button" className="bg-green text-white border border-white hover:bg-white hover:text-green-500 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">Read More</button> {/* Button styling */}
+          <div className="absolute p-10 inset-0 flex text-2xl flex-col items-center justify-center px-10 py-10">
+            {" "}
+            <h2 className="text-center font-size: 2rem; font-bold  ">
+              Welcome to stp
+            </h2>{" "}
+            <p className="mb-10 text-xl al justify-center justify-self-center">
+              Dedan Kimathi Science and Technology Park (DeST-Park) is bringing
+              rapid development of knowledge intensive areas and to facilitate
+              creation of new enterprises.
+            </p>
+            <button
+              type="button"
+              className="bg-green text-xl text-white border border-white hover:bg-white hover:text-green-500 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+            >
+              Read More
+            </button>
           </div>
         </div>
       </div>
     </div>
-
-    <div className={styles.centers}>
-      {/* ... your center content ... */}
-
-
-      
-    </div>
-    <div className={styles.clients}>
-      {/* ... your center content ... */}
-
-
-      
-    </div>
-    
-
-  </div>
   );
 }

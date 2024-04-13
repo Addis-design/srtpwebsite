@@ -2,26 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
- 
 body {
-  max-width: 100vw;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
@@ -37,11 +20,13 @@ a {
 
 .container {
   flex: 1 0 auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 60px;
   box-sizing: border-box;
+  max-width: 100%;
+  padding: 0;
   margin: 0;
 }
 
@@ -51,4 +36,9 @@ a {
   top: 0;
   z-index: 100;
   /* Add additional styles for the navigation bar */
+}
+
+.content {
+  width: 100%;
+  box-sizing: border-box;
 }

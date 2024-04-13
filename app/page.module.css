@@ -1,33 +1,33 @@
-.centers{
-    background-color: #3E363F;
-    height:423px;
-   
+.centers {
+  background-color: #3e363f;
+  height: 423px;
 }
 .banner {
-     width: 100vw; /* Set the width to 100% of the viewport width */
-    overflow: hidden;
-     text-align: center;
-    position: relative;
-   
-    border-bottom: 1px solid; /* Add a bottom border if needed */
-  }
-    .clients{
-        background-color: #1E1E1E;
-      
-        height: 339px;
-     
-    }
-    .btnExpore{
-        background-color: green;
-    }
-    .home{
-        overflow: hidden;
-    }
-    .bannerImage {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-      .banners{
-        width: 100;
-      }
+  width: 100%; /* Set the width to 100% of the viewport width */
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  border-bottom: 1px solid; /* Add a bottom border if needed */
+}
+.clients {
+  background-color: #1e1e1e;
+
+  height: 339px;
+}
+.btnExpore {
+  background-color: green;
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.bannerImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.banners {
+  width: 100%;
+}
