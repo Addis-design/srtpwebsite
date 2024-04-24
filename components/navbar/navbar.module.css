@@ -1,9 +1,9 @@
 .nvaBar {
   display: flex;
   justify-content: space-between;
+  background-color: white;
   width: 100%;
   align-items: center;
-  background-color: transparent;
   position: fixed; /* Add this rule */
   top: 0; /* Position it at the top of the viewport */
   left: 0; /* Position it at the left of the viewport */
@@ -24,8 +24,8 @@
 .logo {
   font-weight: bold;
   font-size: 22px;
+  cursor: pointer; /* Add this line to change the cursor on hover */
 }
-
 .links {
   align-items: center;
   display: flex;

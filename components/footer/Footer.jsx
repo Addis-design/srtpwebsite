@@ -7,26 +7,26 @@ export default function Footer() {
     <>
       <div>
         <section className={`${styles.footer}   text-white-800 text-center`}>
-          <h3 class="font-bold text-3xl mb-12">Contact us</h3>
-          <div class="flex flex-wrap">
-            <div class="mb-6 lg:mb-0 flex-initial shrink w-full lg:w-5/12 lg:pr-3">
+          <h3 className="font-bold text-3xl mb-12">Contact us</h3>
+          <div className="flex flex-wrap">
+            <div className="mb-6 lg:mb-0 flex-initial shrink w-full lg:w-5/12 lg:pr-3">
               <iframe
                 src="https://www.bing.com/maps/embed?osid=3f4d1134-cdbe-4f75-a9c8-95c1081c4c14&cp=-0.414713~36.946486&lvl=14.5&pi=0&v=2&sV=2&form=S00027"
                 width="100%"
-                class="h-full  md:h-full w-full border-0 rounded-md"
-                allowfullscreen=""
+                className="h-full  md:h-full w-full border-0 rounded-md"
+                allowFullScreen =""
                 loading="lazy"
               ></iframe>
             </div>
-            <div class="flex-initial shrink w-full lg:w-7/12 lg:pl-3">
+            <div className="flex-initial shrink w-full lg:w-7/12 lg:pl-3">
               <form>
-                <div class="flex flex-wrap">
-                  <div class="flex-initial shrink w-full md:w-9/12 md:pr-3">
-                    <div class="grid md:grid-cols-2 md:gap-4 mb-6">
-                      <div class="mb-6 md:mb-0">
+                <div className="flex flex-wrap">
+                  <div className="flex-initial shrink w-full md:w-9/12 md:pr-3">
+                    <div className="grid md:grid-cols-2 md:gap-4 mb-6">
+                      <div className="mb-6 md:mb-0">
                         <input
                           type="text"
-                          class="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          className="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                           id="exampleX1"
                           placeholder="First name"
                         />
@@ -34,45 +34,45 @@ export default function Footer() {
                       <div>
                         <input
                           type="email"
-                          class="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                          className="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                           id="exampleX2"
                           placeholder="Email address"
                         />
                       </div>
                     </div>
-                    <div class="mb-6">
+                    <div className="mb-6">
                       <input
                         type="text"
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        className="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         id="exampleX3"
                         placeholder="Subject"
                       />
                     </div>
-                    <div class="mb-6">
+                    <div className="mb-6">
                       <textarea
-                        class="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        className="form-control block w-full px-3 py-1.5 text-base font-normal   bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                         id="exampleX4"
                         rows="4"
                         placeholder="Message"
                       ></textarea>
                     </div>
-                    <div class="text-center md:text-left">
+                    <div className="text-center md:text-left">
                       <button
                         type="submit"
-                        class="inline-block px-6 py-2.5 bg-green-600   font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mb-12 md:mb-0"
+                        className="inline-block px-6 py-2.5 bg-green-600   font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mb-12 md:mb-0"
                       >
                         Send
                       </button>
                     </div>
                   </div>
-                  <div class="flex-initial shrink w-full md:w-3/12 md:pl-3">
+                  <div className="flex-initial shrink w-full md:w-3/12 md:pl-3">
                     <ul>
                       <li>
                         <svg
                           aria-hidden="true"
                           focusable="false"
                           data-prefix="fas"
-                          class="w-5 mx-auto text-green-600 mb-1"
+                          className="w-5 mx-auto text-green-600 mb-1"
                           role="img"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 384 512"
@@ -82,19 +82,19 @@ export default function Footer() {
                             d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
                           ></path>
                         </svg>
-                        <p class="mb-6">
+                        <p className="mb-6">
                           <small>
                             Dedan Kimathi University, DeKut 10012, Nyeri
                           </small>
                         </p>
                       </li>
                       <li>
-                        <i class="fas fa-phone fa-2x text-blue-600"></i>
+                        <i className="fas fa-phone fa-2x text-blue-600"></i>
                         <svg
                           aria-hidden="true"
                           focusable="false"
                           data-prefix="fas"
-                          class="w-6 mx-auto text-green-600 mb-1"
+                          className="w-6 mx-auto text-green-600 mb-1"
                           role="img"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
@@ -104,7 +104,7 @@ export default function Footer() {
                             d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
                           ></path>
                         </svg>
-                        <p class="mb-6">
+                        <p className="mb-6">
                           <small>+154712345678</small>
                         </p>
                       </li>
@@ -114,7 +114,7 @@ export default function Footer() {
                           focusable="false"
                           data-prefix="fas"
                           data-icon="envelope"
-                          class="w-6 mx-auto text-green-600 mb-1"
+                          className="w-6 mx-auto text-green-600 mb-1"
                           role="img"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"

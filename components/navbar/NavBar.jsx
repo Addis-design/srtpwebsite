@@ -9,61 +9,40 @@ const links = [
   { id: 1, title: "Home", url: "/" },
   { id: 2, title: "About", url: "/about" },
   { id: 3, title: "Contact", url: "/contact" },
-  { id: 4, title: "Master Plan", url: "masterplan" },
+  { id: 4, title: "Master Plan", url: "/masterplan" },
 ];
 
 export default function NavBar() {
-  const [activeLink, setActiveLink] = useState("/"); // Stores the currently active link
-
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-  const handleActiveLink = (url) => {
-    setActiveLink(url); // Set active link on click
-  };
-  useEffect(() => {
-    function handleScroll() {
-      const currentScrollPos = window.pageYOffset;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-      setPrevScrollPos(currentScrollPos);
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [prevScrollPos, visible]);
 
   return (
     <div
       className={`${
         styles.nvaBar
-      } sticky px-4 flex items-center justify-between ${
-        visible ? styles.visible : styles.hidden
-      }`}
+      } sticky px-4 flex items-center justify-between`}
     >
-      <Link href="/" className={styles.logo}>
-        <Image src={logo} alt="logo" />
-      </Link>
-      <form action="/search" method="get" className="mb-10">
-        <button type="submit">Search</button>
-      </form>
+      <Link href="/">
+  <Image src={logo} alt="logo" className={styles.logo} />
+</Link>
+
       <div className="absolute inset-0 flex items-center justify-center">
         <div className={styles.links}>
           {links.map((link) => (
             <Link
               key={link.id}
               href={link.url}
-              className={`${styles.link} ${
-                activeLink === link.url && styles.active
-              }`} // Add active class conditionally
-              onClick={() => handleActiveLink(link.url)} // Call handleClick on click
-            >
+              className={`${styles.link} `} // Add active class conditionally
+             >
               {link.title}
             </Link>
           ))}
         </div>
       </div>
+      <form action="/search" method="get" className="" >
+      <button
+                        type="submit"
+                        className="inline-block px-6 py-2.5 bg-green-600   font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mb-12 md:mb-0"
+                      >Search</button>
+  </form>
     </div>
   );
 }
